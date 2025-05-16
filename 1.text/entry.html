@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description"content="プログラミングスクール「プログラミング学習塾 SKILSET」は東京都新宿区にあります。
+        市ケ谷駅から徒歩1分の場所です。">
+        <title>体験授業お申込み|プログラミングj学習塾 SKILSET</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body class="price">
+        <heder>
+            <h1><a href="index.html">
+            <img str="images/logo.png" alt="プログラミング学習塾 SKILSET">
+            </a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="course.html">コース紹介</a></li>
+                    <li><a href="price.html">受講料金</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="entry.html">体験授業お申込み</a></li>
+                </ul>
+            </nav>
+        </heder>
+        <main>
+            <div class="title">
+                <h1>体験授業お申込み</h1>
+                <ol>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li>体験授業お申込み</li>
+                </ol>
+            </div>
+            <div class="innner">
+                <h2>体験授業お申込み</h2>
+                <p>必要事項を記入して登録ボタンを押してください。</p>
+                <br/>
+                <input action="#">
+                    <p>氏名</p>
+                    <input type="text" name="username" />
+                    <p>電話番号</p>
+                    <input type="tel" name="tel" />
+                    <p>生年月日</p>
+                    <input type="date" name="birthday" />
+                    <p>メール</p>
+                    <input type="email" name="mail" />
+                    <p>性別</p>
+                    <input type="radio" name="gender" value="男" checked>
+                    <span>男</span>
+                    <input type="radio" name="gender" value="女" id="woman"/>
+                    <sapan>女</sapan>
+                    <p>希望コース</p>
+                    <select name="course">
+                        <option selected value="情報大学併修学科">ロボットプログラミングコース</option>
+                        <option value="システムエンジニア科">Scratchプログラミングコース</option>
+                    </select>
+                    <p>備考</p>
+                    <input type="textarea" name="remarks" cols="40" rows="4" maxlength="40"/>
+                    </input>
+                    <br/>
+                    <input type="button" onclick="alert('send now!'); return false;" value="登録">
+                    <input type="reset" value="クリア"/>
+            </form>
+    </body>
+</html>

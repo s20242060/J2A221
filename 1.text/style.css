@@ -8,7 +8,7 @@ body{
 }
 
 a,
-alink{
+a:link{
     color:#3585b7;
 }
 a:visited{
@@ -17,6 +17,15 @@ a:visited{
 a:hover{
     text-decoration:none;
     color:#555;
+}
+@media screen and (max-width:767px){
+    body{
+        font-size: 15px;
+    }
+    img{
+        max-width: 100%;
+        height:auto;
+    }
 }
 
 
@@ -46,6 +55,34 @@ header nav ul li a:visited{
 }
 header nav ul li a:hover{
     color:#888;
+}
+@media screen and (max-width:767px){
+    header{
+        display:block;
+    }
+    header h1{
+        margin:10px 0 0;
+        text-align:center;
+    }
+    header h1 img{
+        width:150px;
+    }
+    header nav ul{
+        width:25%;
+    }
+    header nav ul li:last-child{
+        width:100%;
+    }
+    header nav ul li a,
+    header nav ul li a:link,
+    header nav ul li a:visited{
+        padding:10px 0;
+        text-align:center;
+    }
+    header nav ul li:list-child a{
+        background:#00b6bd;
+        color:#fff;
+    }
 }
 
 /*footer*/
@@ -148,6 +185,25 @@ main ul{
     margin:0 0 60px;
     padding:0 0 0 20px
 }
+@media screen and (max-width:767px) {
+    main.inner{
+        width:100%;
+        padding:0 20px;
+        box-sizing:border-box;
+    }
+    main h2{
+        margin:40px 0 15px;
+        font-size:20px;
+    }
+    main dl dt{
+        float:none;
+        padding:0;
+    }
+    main dl dd{
+        margin:0 0 10px;
+        padding:10px 0 10px 0;
+    }
+}
 
 /*course*/
 .course main .course-box{
@@ -183,3 +239,18 @@ main ul{
 .home main section:first-child div{
     padding:0 0 0 40px;
 }
+@media screen and (max-width:767px){
+    .home main .visual{
+        background-size:cover;
+        height:200px;
+        padding:40px 30px 0;
+    }
+    .home main section{
+        display:block;
+    }
+    .home main section div,
+    .home main section:first-child div{
+        padding:0;
+    }
+}
+
